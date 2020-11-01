@@ -94,27 +94,27 @@
             </picture>     
         </a>
     <nav class="page-header__main-nav main-nav">
-        <button class="main-nav__toggle main-nav__toggle--opened"  type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle main-nav__toggle--opened main-nav__toggle--nojs"  type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-            <div class="cite-list__wrapper">
-                <ul class="main-nav__list cite-list">
-                    <li class="cite-list__item">
-                        <a class="cite-list__link" href="catalog.html">Каталог товаров</a>
+            <div class="main-nav__cite-wrapper">
+                <ul class="main-nav__cite-list">
+                    <li class="main-nav__cite-item">
+                        <a class="main-nav__cite-link" href="catalog.html">Каталог товаров</a>
                     </li>
-                    <li class="cite-list__item">
-                        <a class="cite-list__link" href="form.html">Вязание на заказ</a>
+                    <li class="main-nav__cite-item">
+                        <a class="main-nav__cite-link" href="form.html">Вязание на заказ</a>
                     </li>
                 </ul>
-                <ul class="main-nav__list user-list">
-                    <li class="user-list__item user-list__search">
-                        <a href="#" class="user-list__link">Поиск по сайту
+                <ul class="main-nav__user-list">
+                    <li class="main-nav__user-item main-nav__user-search">
+                        <a href="#" class="main-nav__user-link">Поиск по сайту
                         <svg width="17.6px" height="17.6px">
                             <use xlink:href="#search"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="user-list__item user-list__cart">
-                        <a href="#" class="user-list__link">Корзина: <span>пока пуста</span>
+                    <li class="main-nav__user-item main-nav__user-cart">
+                        <a href="#" class="main-nav__user-link">Корзина: <span>пока пуста</span>
                         <svg width="20.294px" height="18.849px">
                             <use xlink:href="#cart"></use>                        
                         </svg> 
@@ -122,10 +122,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="sub-cite-list__wrapper">
-                <ul class="main-nav__list sub-cite__list">
-                    <li class="sub-cite__item"><a href="#" class="sub-list__link">Новые поступления</a></li>
-                    <li class="sub-cite__item"><a href="#" class="sub-list__link">Распродажа</a></li>
+            <div class="main-nav__sub-cite-wrapper">
+                <ul class="main-nav__sub-cite-list">
+                    <li class="main-nav__sub-cite-item"><a href="#" class="main-nav__sub-cite-link">Новые поступления</a></li>
+                    <li class="main-nav__sub-cite-item"><a href="#" class="main-nav__sub-cite-link">Распродажа</a></li>
                 </ul>
                 <small class="main-nav__delivery-info">Бесплатная доставка по России</small>
             </div>
@@ -158,18 +158,18 @@
                     <div class="top-item__wrapper">
                         <p class="top-item__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
                             и трех размерах.</p>
-                        <table class="top-item__descriptions table">
-                            <tr class="table__tr">
-                                <td class="table__desc">Цвет:</td>
-                                <td class="table__value">«Тиффани»/серый</td>
+                        <table class="top-item__descriptions top-item__table">
+                            <tr class="top-item__table-tr">
+                                <td class="top-item__table-desc">Цвет:</td>
+                                <td class="top-item__table-value">«Тиффани»/серый</td>
                             </tr>
-                            <tr class="table__tr">
-                                <td class="table__desc">Диаметр:</td>
-                                <td class="table__value">25 см</td>
+                            <tr class="top-item__table-tr">
+                                <td class="top-item__table-desc">Диаметр:</td>
+                                <td class="top-item__table-value">25 см</td>
                             </tr>
-                            <tr class="table__tr">
-                                <td class="table__desc">Высота:</td>
-                                <td class="table__value">15 см</td>
+                            <tr class="top-item__table-tr">
+                                <td class="top-item__table-desc">Высота:</td>
+                                <td class="top-item__table-value">15 см</td>
                             </tr>
                         </table>
                         <picture class="top-item__image" alt="Вязаные корзинки">
@@ -178,7 +178,7 @@
                             <img srcset="img/content/triple-set-mobile@1x.jpg 1x, img/content/triple-set-mobile@2x.jpg 2x">
                         </picture>
                         <p class="top-item__price">Цена: 990 руб.</p>
-                        <a class="top-item__order button" href="#">Заказать</a>
+                        <button class="top-item__order button" href="#">Заказать</button>
                     </div>
 
             </section>
@@ -276,41 +276,68 @@
     <svg  class="page-footer__logo" alt="Логотип магазина Мишка" width="101.615px" height="34.056px">
       <use xlink:href="#logo-mishka"></use>
     </svg>
-    <div class="page-footer__social social">
-        <ul class="social__list">
-            <li class="social__item">
-                <a class="social__link social__link--instagram" href="#">
-                    <svg class="social__icon" alt="Инстаграм" width="21.769px" height="21.334px">
+    <div class="page-footer__social">
+        <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+                <a class="page-footer__social-link--instagram" href="#">
+                    <svg class="page-footer__social-icon" alt="Инстаграм" width="21.769px" height="21.334px">
                       <use xlink:href="#instagram"></use>
                         </svg>
                 </a>
             </li>
-            <li class="social__item">
-                <a class="social__link social__link--facebook" href="#">
-                    <svg  class="social__icon"  alt="Фейсбук" width="14.962px" height="27.718px">
+            <li class="page-footer__social-item">
+                <a class="page-footer__social-link--facebook" href="#">
+                    <svg  class="page-footer__social-icon"  alt="Фейсбук" width="14.962px" height="27.718px">
                       <use xlink:href="#facebook"></use>
                       </svg>
                 </a>
             </li>
-            <li class="social__item">
-                <a class="social__link social__link--twitter" href="#">
-                    <svg  class="social__icon"  alt="Твиттер" width="23.494px" height="20.168px">
+            <li class="page-footer__social-item">
+                <a class="page-footer__social-link--twitter" href="#">
+                    <svg  class="page-footer__social-icon"  alt="Твиттер" width="23.494px" height="20.168px">
                       <use xlink:href="#twitter"></use>
                       </svg>
                 </a>
             </li>
         </ul>
     </div>
-    <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a href="#" class="copyright__link">
-            <svg class="copyright__logo" alt="Лого html-академии" width="26.943px" height="34.09px">
+    <!-- <div class="page-footer__copyright copyright"> -->
+        <!-- <b class="copyright__text">Разработано</b> -->
+        <a href="#" class="page-footer__copyright-link">
+            Разработано
+            <svg class="page-footer__copyright-logo" alt="Лого html-академии" width="26.943px" height="34.09px">
               <use xlink:href="#logo-htmlacademy"></use>              
             </svg>
         </a>
-    </div>
+    <!-- </div> -->
     </div>
 </footer>
+
+    <section class="modal modal-cart">
+        <div class="modal-cart__container">
+        <h2 class="modal-cart__title">Добавить в корзину</h2>
+        <p class="modal-cart__text">Выберите размер:</p>
+        <form method="GET" action="https://echo.htmlacademy.ru">
+        <ul class="modal-cart__list">
+            <li class="modal-cart__item">
+                <input type="radio" name="size" value="S" id="s" class="visually-hidden" checked>
+                <label for="s" class="modal-cart__size">S</label>
+            </li>
+            <li class="modal-cart__item">
+                <input type="radio" name="size" value="M" id="m" class="visually-hidden">
+                <label for="m" class="modal-cart__size">M</label>
+            </li><li class="modal-cart__item">
+                <input type="radio" name="size" value="L" id="l" class="visually-hidden">
+                <label for="l" class="modal-cart__size">L</label>
+            </li>
+        </ul>
+        <button type="submit" class="modal-cart__button button">Добавить</button>
+        </form>
+        </div>
+    </section>
+    <div class="modal-overlay"></div>
+
+    <script src="js/script.min.js"></script>
 </body>
 
 </html>
